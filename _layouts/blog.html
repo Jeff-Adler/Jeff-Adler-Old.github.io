@@ -4,6 +4,15 @@ layout: default
 
  <div class="row" id="blog-posts-container">
       <div class="col-lg-8 offset-md-1">
+            <!-- Medium Widget -->
+          <div id="retainable-rss-embed" 
+          data-rss="https://medium.com/feed/@jeffm.adler"
+          data-maxcols="3" 
+          data-layout="slider" 
+          data-poststyle="inline" 
+          data-readmore="Read the rest" 
+          data-buttonclass="btn btn-primary" 
+          data-offset="-100"></div>
               <ul>
                   <div class="row">
                       {% for post in paginator.posts %}
