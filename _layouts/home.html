@@ -10,7 +10,7 @@ layout: default
   });
 </script>
     <div class="jumbotron" style="text-align: center;">
-      <img class="author-profile-img" src="/assets/img/profile.png" />
+      <img class="author-profile-img" src="/assets/img/linkedIn_round.png" />
       <p class="jumbotron-heading">Hi, I am {{site.author}} !</p>
       <p class="lead" id="typewriteText"></p>
          {%- include github_star_button.html -%}
@@ -27,6 +27,15 @@ layout: default
           </div>
         </div>
         <br />
+
+        <div id="retainable-rss-embed" 
+        data-rss="https://medium.com/feed/@jeffm.adler"
+        data-maxcols="3" 
+        data-layout="slider" 
+        data-poststyle="inline" 
+        data-readmore="Read the rest" 
+        data-buttonclass="btn btn-primary" 
+        data-offset="-100"></div>
 
         <ul>
           {% for post in site.posts limit:5 %}

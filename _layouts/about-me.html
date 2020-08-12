@@ -6,7 +6,7 @@ layout: default
   <div class="col-lg-4 offset-md-1">
     <div class="card" id="profile-card">
       <a href="/">
-        <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" />
+        <img src="/assets/img/linkedIn_round.png" class="profile-img" />
       </a>
       <h1 class="profile-name">{{ site.title }}</h1>
       <p class="profile-bio">{{ site.subtitle }}</p>
@@ -38,14 +38,14 @@ layout: default
         {% endif %} {% if site.medium_username %}
         <a
           class="social-link"
-          href="http://medium.com/@{{ site.medium_username }}"
+          href="http://medium.com/@{{ site.medium_username }}" target="_blank"
         >
           <i class="fab fa-medium-m"></i>
         </a>
         {% endif %} {% if site.github_username %}
         <a
           class="social-link"
-          href="http://github.com/{{ site.github_username }}"
+          href="http://github.com/{{ site.github_username }}" target="_blank"
         >
           <i class="fab fa-github"></i>
         </a>
@@ -59,7 +59,7 @@ layout: default
         {% endif %} {% if site.linkedin_username %}
         <a
           class="social-link"
-          href="http://linkedin.com/in/{{ site.linkedin_username }}"
+          href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -97,6 +97,12 @@ layout: default
       <h1>Skills</h1>
 
       {%- include author_skills.html -%}
+    </div>
+
+    <div class="card">
+      <h1>Additional</h1>
+
+      {%- include additional_skills.html -%}
     </div>
 
     {% if site.wakatime_username %}
